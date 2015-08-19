@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ---------------------------------------------------------------------- */
+/* "Polyglot" Language Switcher 
+/* ----------------------------------------------------------------------
+Version: 2.2
+Author: Ixtendo
+Author URI: http://www.ixtendo.com
+License: MIT License
+License URI: http://www.opensource.org/licenses/mit-license.php
+------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* TABLE OF CONTENTS
+/* ----------------------------------------------------------------------
+-Reset
+-Generic
+-JS-created Code
+------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+/* Reset
+/* ---------------------------------------------------------------------- */
+#polyglotLanguageSwitcher, #polyglotLanguageSwitcher * {
+	margin: 0;
+	padding: 0; 
+	outline: none;
+}
+
+#polyglotLanguageSwitcher ul {
+	list-style: none;	
+}
+
+/* ---------------------------------------------------------------------- */
+/* Generic
+/* ---------------------------------------------------------------------- */
+#polyglotLanguageSwitcher {
+	float: right;
+	line-height: normal;
+	position: relative; /* sets the initial position for the drop-down menu */
+	z-index: 100;
+	margin: 8px 0 0 20px;
+}
+
+#polyglotLanguageSwitcher form {
+	display: none;	
+}
+
+/* ---------------------------------------------------------------------- */
+/* JS-created Code
+/* ---------------------------------------------------------------------- */
+#polyglotLanguageSwitcher a {
+	display: block;	
+	padding: 0.25em 6px 0.25em 28px; /* 3px 6px 3px 28px */
+	color: #383838;
+	width: 5.333em; /* 64px; total width: 100px */
+	background-color: #f7f7f7;
+	background-repeat: no-repeat;
+	background-position: 6px center; 
+}
+
+#polyglotLanguageSwitcher a:hover {
+	background-color: #fff;
+}
+
+#polyglotLanguageSwitcher a.current {
+	position: relative; /* sets the initial position for the trigger arrow */
+	border: 1px solid #e5e5e5;
+	height: 1.333em; /* 16px */
+}
+
+#polyglotLanguageSwitcher span.trigger {
+	display: block;
+	position: absolute;
+	width: 7px;
+	height: 4px;
+	text-indent: -10000em;
+	top: 0.5em; /* 6px */
+	right: 6px;
+	background: url(../images/bullets-and-arrows/arrow-down-lg-switcher.png) no-repeat left top;	
+}
+
+/* Drop-Down Menu */
+
+#polyglotLanguageSwitcher ul.dropdown { 
+	display: none;
+	position: absolute;
+	top: 1.916em; /* 23px */
+	left: 0;
+	border: 1px solid #e5e5e5;
+	border-top: none !important;
+	background-color: #fff;
+}
+
+#polyglotLanguageSwitcher ul.dropdown li {
+	border-top: 1px solid #e5e5e5;
+}
+
+/* Flags */
+
+#en { 
+	background-image: url(../images/flags/gb.png);
+}
+
+#fr { 
+	background-image: url(../images/flags/fr.png);	
+}
+
+#de { 
+	background-image: url(../images/flags/de.png);	
+}
+
+#it { 
+	background-image: url(../images/flags/it.png);	
+}
+
+#es { 
+	background-image: url(../images/flags/es.png);	
+}
+
+#ru {
+	background-image: url(../images/flags/ru.png);
+}
+
+#us {
+	background-image: url(../images/flags/us.png);
+}
+
+#mx {
+	background-image: url(../images/flags/mx.png);
+}

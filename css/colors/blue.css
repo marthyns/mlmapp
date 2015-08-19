@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document *//* ---------------------------------------------------------------------- */
+/* Finesse Red Styles
+/* ----------------------------------------------------------------------
+TABLE OF CONTENTS
+
+-Text
+-Background Colors
+-Sprites
+-Borders
+-Media Player
+------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* Text
+/* ---------------------------------------------------------------------- */
+a, a > *,
+#polyglotLanguageSwitcher a:hover, #footer-top a,
+#footer-bottom a:hover,
+#footer-top .tweet_time a:hover,
+ul#search-results h2 a:hover, ul#search-results h2 a:hover strong, 
+.widget ul.menu li > a:hover, .widget ul.menu li.current-menu-item > a,
+.ui-tabs .ui-tabs-nav li a:hover, .ui-tabs .ui-tabs-nav li.ui-state-active a,
+.ui-accordion .ui-accordion-header:hover, .ui-accordion .ui-accordion-header.ui-state-active,
+.pricing-table .featured span.price span,
+ol.comment-list .comment-author a:hover,
+.flex-caption a:hover,
+.entry-title a:hover,
+.iconbox h4 a:hover {
+	color: #0099ff;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Background Colors
+/* ---------------------------------------------------------------------- */
+.flex-direction-nav a:link, .flex-direction-nav a:visited,
+.entry-slider-nav a { /* position here is important */ 
+	background-color: rgba(242,88,36,0.8);
+}
+
+.button, .content-form input.button, #comment-form #submit,
+.flex-direction-nav a:hover, .flex-direction-nav a:active,
+.ie8 .flex-direction-nav a:link, .ie8 .flex-direction-nav a:visited,
+.ie8 .flex-direction-nav a:hover, .ie8 .flex-direction-nav a:active,
+.jcarousel-prev:hover, .jcarousel-prev:focus,
+.jcarousel-next:hover, .jcarousel-next:focus,
+.entry-slider-nav a:hover, .entry-slider-nav a:active,
+a.post-format-wrap:hover .post-format, #toTop:hover,
+.page-nav a:hover,
+ul.tags a:hover, 
+.page-nav li.current,
+.button.black:hover,
+#filter a:hover, #filter li.active a,
+.pricing-box.featured .header,
+.highlight.colored,
+.flex-control-paging a.flex-active,
+ul#navlist li.current a,
+.ddsubmenustyle li a:hover,
+.ie8 .entry-slider-nav a {
+	background-color: #0099ff;
+}
+
+.pricing-box.featured .title {
+    background-color: #d93e0b;
+}
+
+.gen-table tbody tr:hover th, .gen-table tbody tr:hover td {
+	background-color: #fcf1ed;	
+}
+
+/* HTML5 Reset CSS Rewriting */
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {background: #0099ff;}
+::selection {background: #0099ff;} 
+
+ins, mark {background-color: #0099ff;}
+
+/* ---------------------------------------------------------------------- */
+/* Sprites
+/* ---------------------------------------------------------------------- */
+.social-links a:hover {
+	background-position: left -25px; 
+}
+
+.team-member .social-links a:hover {
+	background-position: left -17px;
+}
+
+span.iconbox-icon {
+	background-position: left top;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Borders
+/* ---------------------------------------------------------------------- */
+.pricing-box.featured .header {
+	 border-color: #d93e0b;
+}
+
+ul#navlist li.current a,
+.ddsubmenustyle li a:hover,
+.infobox { 
+	border-color: #0099ff;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Media Player
+/* ---------------------------------------------------------------------- */
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: #0099ff;
+	background: rgba(242,88,36,0.8);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(217,62,11,0.8)), to(rgba(242,88,36,0.8))); 
+	background: -webkit-linear-gradient(top, rgba(217,62,11,0.8), rgba(242,88,36,0.8));
+	background: -moz-linear-gradient(top, rgba(217,62,11,0.8), rgba(242,88,36,0.8));
+	background: -o-linear-gradient(top, rgba(217,62,11,0.8), rgba(242,88,36,0.8));
+	background: -ms-linear-gradient(top, rgba(217,62,11,0.8), rgba(242,88,36,0.8));
+	background: linear-gradient(rgba(217,62,11,0.8), rgba(242,88,36,0.8));
+}
+
+.mejs-controls .mejs-button button:focus {
+	outline-color: #0099ff;
+}

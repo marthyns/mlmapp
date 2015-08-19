@@ -1,0 +1,585 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ---------------------------------------------------------------------- */
+/* Theme Information
+/* ----------------------------------------------------------------------
+Name: Finesse
+Description: Responsive Business Theme
+Author: Ixtendo
+Author URI: http://www.ixtendo.com
+------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* Finesse Shortcode Styles
+/* ----------------------------------------------------------------------
+TABLE OF CONTENTS
+
+-Lists
+-Buttons
+-Blockquotes
+-Notification Boxes
+-Tabs
+-Toggle & Accordion
+-Dropcaps
+-Highlights
+-Preformatted Text & Computer Code
+-Infobox
+-Images
+-White Space
+------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* Lists
+/* ---------------------------------------------------------------------- */
+ul.arrow,
+ul.circle,
+ul.square,
+ul.check,
+ol.decimal,
+ol.upper-roman, 
+ol.lower-alpha, 
+ol.upper-alpha {
+	margin-bottom: 20px;
+}
+
+ul.arrow ul, 
+ul.circle ul,
+ul.square ul,
+ul.check ul,
+ol.decimal ul,
+ol.upper-roman ul,
+ol.lower-alpha ul,
+ol.upper-alpha ul {
+	margin-left: 14px;	
+}
+
+ul.arrow ol, 
+ul.circle ol,
+ul.square ol,
+ul.check ol,
+ol.decimal, ol.decimal ol,
+ol.upper-roman, ol.upper-roman ol,
+ol.lower-alpha, ol.lower-alpha ol,
+ol.upper-alpha, ol.upper-alpha ol {
+	margin-left: 18px; 	
+}
+
+ul.arrow li,
+ul.circle li,
+ul.square li,
+ul.check li,
+ol.decimal li,
+ol.upper-roman li, 
+ol.lower-alpha li, 
+ol.upper-alpha li {
+	margin-bottom: 5px;
+}
+
+ul.arrow ul li:first-child, ul.arrow ol li:first-child,
+ul.circle ul li:first-child, ul.circle ol li:first-child,
+ul.square ul li:first-child, ul.square ol li:first-child, 
+ul.check ul li:first-child, ul.check ol li:first-child,
+ol.decimal ol li:first-child, ol.decimal ul li:first-child,
+ol.upper-roman ol li:first-child, ol.upper-roman ul li:first-child, 
+ol.lower-alpha ol li:first-child, ol.lower-alpha ul li:first-child, 
+ol.upper-alpha ol li:first-child, ol.upper-alpha ul li:first-child {
+	margin-top: 5px;
+}
+
+/* Unordered Lists */
+
+ul.arrow li {
+	background: url(../images/bullets-and-arrows/arrow-right.png) no-repeat left 0.416em; /* 5px */
+	padding-left: 11px;	
+}
+
+ul.circle li {
+	background: url(../images/bullets-and-arrows/circle.png) no-repeat left 0.5em; /* 6px */
+	padding-left: 11px;	
+}
+
+ul.square li {
+	background: url(../images/bullets-and-arrows/square.png) no-repeat left 0.5em; /* 6px */
+	padding-left: 11px;	
+}
+
+ul.check li {
+	background: url(../images/bullets-and-arrows/check.png) no-repeat left 0.333em; /* 4px */
+	padding-left: 17px;	
+}
+
+/* Ordered Lists */
+
+ol.decimal {
+	list-style: decimal;	
+}
+
+ol.upper-roman {
+	list-style: upper-roman;	
+}
+
+ol.lower-alpha {
+	list-style: lower-alpha;	
+}
+
+ol.upper-alpha {
+	list-style: upper-alpha;	
+}
+
+/* ---------------------------------------------------------------------- */
+/* Buttons
+/* ---------------------------------------------------------------------- */
+.button, .content-form input.button, #comment-form #submit {
+	width: auto;
+	display: inline-block;	
+	cursor: pointer;
+	line-height: normal;
+	margin: 0 10px 20px 0;
+	border: none; 
+	color: #fff !important;
+	padding: 7px 15px;
+}
+
+.button.large {
+	font-size: 1.5em; /* 18px */
+	padding: 10px 20px;
+}
+
+/* begin colors */
+
+.button.orange {
+	background-color: #f25824;	
+}
+
+.button.black {
+	background-color: #383838;	
+}
+
+.button.green {
+	background-color: #7eb01a;
+}
+
+.button.blue {
+	background-color: #4396bf;
+}
+
+.button.light-orange {
+	background-color: #eb7f00;	
+}
+
+.button.purple {
+	background-color: #b28eb4;	
+}
+
+.button.teal {
+	background-color: #1693A5;	
+}
+
+.button.red {
+	background-color: #e53c3c;	
+}
+
+.button.pink {
+	background-color: #ce5c76;	
+}
+
+/* end colors */
+
+.button:hover, .content-form input.button:hover, #comment-form #submit:hover {
+	background-color: #383838;		
+}
+
+/* ---------------------------------------------------------------------- */
+/* Blockquotes
+/* ---------------------------------------------------------------------- */
+blockquote {
+	margin-bottom: 20px;
+}
+
+.quote-content {
+	font-family: 'Tinos', serif;
+	font-style: italic;
+    color: #888;
+	font-size: 1.25em; /* 15px */
+	line-height: 1.4em;
+}
+
+.quote-content p {
+	margin-top: 20px;	
+	margin-bottom: 0;
+}
+
+.quote-content > p:first-child {
+	margin: 0;	
+}
+
+/* Simple */
+
+blockquote.simple {
+	padding-left: 10px;
+	border-left: 2px solid #d9d9d9;
+}
+
+blockquote.simple .quote-meta {
+	margin-top: 10px;
+}
+
+/* Speech Bubble */
+
+blockquote.speech-bubble .quote-content {
+	position: relative;
+	background: url(../images/quote.png) no-repeat 15px 19px;
+	padding: 15px 15px 15px 41px;
+	background-color: #f7f7f7;
+	border: 1px solid #e5e5e5;	
+}
+
+blockquote.speech-bubble span.quote-arrow {
+	display: block;
+	width: 11px;
+	height: 6px;
+	background: url(../images/testimonial-arrow.png) no-repeat left top;
+	position: absolute;
+	right: 17.173%; /* 79px/460px */
+	bottom: -6px;	
+}
+
+blockquote.speech-bubble .quote-meta {
+	text-align: right;
+	margin-top: 11px;
+	margin-right: 13.043%; /* 60px/460px */
+}
+
+/* ---------------------------------------------------------------------- */
+/* Notification Boxes
+/* ---------------------------------------------------------------------- */
+.notification-box {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 10px 24px 10px 40px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	border: 1px solid;
+}
+
+a.notification-close {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 10px;	
+	color: #666 !important;
+	font-weight: bold;
+	font-size: 1.166em; /* 14px */
+	line-height: normal;
+}
+
+.notification-box p {
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+.notification-box > p:first-child {
+	margin: 0;	
+}
+
+.notification-box-info {
+	background-color: #d7ebf5;
+	background-image: url(../images/info-16.png);
+	border-color: #99c7de; 	
+}
+
+.notification-box-success {
+	background-color: #deebc5;
+	background-image: url(../images/flag-16.png);
+	border-color: #b9d188; 	
+}
+
+.notification-box-warning {
+	background-color: #fcf3d7;
+	background-image: url(../images/alert-16.png);
+	border-color: #f5d77d; 	
+}
+
+.notification-box-error {
+	background-color: #faebe6;
+	background-image: url(../images/error-16.png);
+	border-color: #f5d0c4; 	
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tabs
+/* ---------------------------------------------------------------------- */
+.ui-tabs {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 1.5em; /* 18px */
+	margin-bottom: 20px;
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.ui-tabs .ui-helper-reset {
+	line-height: 1.5em; /* 18px */	
+}
+
+.ui-tabs .ui-widget-content {
+	color: #383838;
+}
+
+.ui-tabs .ui-tabs-hide { 
+	position: absolute;
+    left: -10000em;
+}
+
+.ui-tabs .ui-tabs-nav {
+	padding: 0;
+	border: none;
+}
+
+.ui-tabs .ui-widget-header,
+.ui-tabs .ui-state-active {
+	background: none;
+}
+
+.ui-tabs .ui-tabs-nav li,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    float: left;
+	margin: 0 2px -1px 0;
+	padding: 0;
+    position: relative;
+    z-index: 10;
+	border: none;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    display: block;
+	padding: 5px 10px;
+	color: #383838;
+	background-color: #f7f7f7;
+	border: 1px solid #e5e5e5;
+	border-bottom: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-active a {
+    background-color: #fff;
+	padding-bottom: 6px; /* makes the unselected tabs appear above the border */
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a {
+    color: #888 !important;
+    cursor: default;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 15px 10px;
+    background-color: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 0;
+	overflow: hidden;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Toggle & Accordion
+/* ---------------------------------------------------------------------- */
+.ui-accordion {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 1.5em; /* 18px */
+}
+
+.ui-accordion .ui-helper-reset {
+	line-height: 1.5em; /* 18px */	
+}
+
+.ui-accordion .ui-widget-content {
+	color: #383838;	
+}
+
+.toggle, .accordion {
+	margin-bottom: 20px;	
+}
+
+.ui-accordion .ui-accordion-header {
+	display: block;
+	position: relative; /* sets the initial position for the icon */
+	padding: 10px 10px 10px 40px;
+	cursor: pointer;
+	background: none;
+	background-color: #f7f7f7;
+	border: 1px solid #e5e5e5;
+	margin: 0;
+	border-radius: 0;
+	color: #383838;
+}
+
+.ui-accordion[data-disabled="true"] .ui-accordion-header,
+.ui-accordion[data-disabled="true"] .ui-accordion-header:hover {
+    color: #888;
+    cursor: default;
+}
+
+.ui-accordion > div:first-child > .ui-accordion-header {
+	border-top: 1px solid #e5e5e5;		
+}
+
+.ui-accordion .ui-accordion-header.accordion-title {
+	border-top: none;	
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 15px 10px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	border-radius: 0;
+	overflow: hidden;
+}
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	background: url(../images/toggle-plus.png) no-repeat left top;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active .ui-accordion-header-icon {
+	background-image: url(../images/toggle-minus.png);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Dropcaps
+/* ---------------------------------------------------------------------- */
+.dropcap {
+	float: left;
+	font-weight: 600;
+	line-height: 1em;
+	text-transform: uppercase;
+	margin-right: 5px;
+}
+
+.dropcap.simple {
+	font-size: 2.5em; /* 30px */
+}
+
+.dropcap.with-bg {
+	font-size: 2em; /* 24px */
+    padding: 6px 10px;
+	background-color: #e5e5e5;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Highlights
+/* ---------------------------------------------------------------------- */
+.highlight {
+	color: #fff;
+    padding: 2px;
+}
+
+.highlight.black {
+	background-color: #383838;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Preformatted Text & Computer Code
+/* ---------------------------------------------------------------------- */
+pre, code {
+    font-family: 'Courier New', Courier, monospace;
+	color: #888;
+}
+
+pre {
+	background-color: #fff;
+	border-left: 2px solid #d9d9d9;
+    padding: 10px;
+	margin-bottom: 20px;
+	white-space: pre-wrap;
+    word-wrap: break-word;	
+}
+
+/* ---------------------------------------------------------------------- */
+/* Infobox
+/* ---------------------------------------------------------------------- */
+.infobox {
+	border-left: 4px solid;
+}
+
+.infobox-inner {
+	background-color: #f7f7f7;
+	border: 1px solid #e5e5e5;
+	border-left: none;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+}
+
+.infobox h2 {
+	margin-bottom: 5px;
+}
+
+.infobox div.with-button {
+	display: inline;	
+}
+
+.infobox .button {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+.infobox .mobile-button {
+	display: none;
+}
+
+.infobox p {
+	margin-bottom: 0;
+	margin-top: 20px;	
+}
+
+.infobox h2 + p,
+.infobox p:first-child {
+	margin: 0;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Images
+/* ---------------------------------------------------------------------- */
+.entry-image.float-left,
+.float-left.caption {
+    margin: 5px 20px 15px 0;
+}
+
+.entry-image.float-right,
+.float-right.caption {
+    margin: 5px 0 15px 20px;
+}
+
+.entry-image.center-block,
+.center-block.caption {
+    margin-top: 15px;
+	margin-bottom: 15px;	
+}
+
+.caption .entry-image {
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* White Space
+/* ---------------------------------------------------------------------- */
+.space20 {
+	height: 20px;	
+}
+
+.space40 {
+	height: 40px;	
+}
+
+.indent {
+	margin-left: 30px !important;	
+}
